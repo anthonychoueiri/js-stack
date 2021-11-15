@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prepare": "cd ../.. && husky install js-stack/exercise-7/.husky",
     "start": "yarn dev:start",
     "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
     "dev:wds": "webpack-dev-server --progress --mode production",
@@ -76,6 +75,7 @@
     "redux-thunk": "^2.4.0",
     "socket.io": "^4.3.2",
     "socket.io-client": "^4.3.2",
-    "tether": "^2.0.0"
+    "tether": "^2.0.0",
+    "yarn.lock": "^0.0.1-security"
   }
 }
