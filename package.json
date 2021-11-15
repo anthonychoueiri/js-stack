@@ -40,7 +40,7 @@
     "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
     "fetch-mock": "^9.11.0",
     "flow-bin": "^0.163.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^27.3.1",
     "nodemon": "^2.0.14",
     "pm2": "^5.1.2",
