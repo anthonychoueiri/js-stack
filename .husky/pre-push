@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn test && yarn prod:build
+yarn test && yarn prod:build && yarn codecov -t 974f1baf-4c5b-4690-9c5b-2f5cdf28ba75
