@@ -50,9 +50,7 @@ const wrapApp = (AppComponent, reduxStore) => (
 
 ReactDOM.render(wrapApp(App, store), rootEl);
 
-// $FlowFixMe
 if (module.hot) {
-  // $FlowFixMe
   module.hot.accept('../shared/app', () => {
     // eslint-disable-next-line global-require
     const NextApp = require('../shared/app').default;
@@ -64,4 +62,4 @@ const jssServerSide = document.querySelector(JSS_SSR_SELECTOR);
 // $FlowFixMe
 jssServerSide.parentNode.removeChild(jssServerSide);
 
-setUpSocket(store);
+setUpSocket();

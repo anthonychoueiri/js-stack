@@ -1,4 +1,5 @@
-[options]
+[libs]
+flow-typed/moduleDef.js
 
 [ignore]
 .*/node_modules/jss/.*
