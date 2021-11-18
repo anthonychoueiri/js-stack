@@ -20,10 +20,14 @@ export const sayHelloAsync = (num: number): function => async (dispatch: Functio
 
   try {
     const res = await fetch(helloEndpointRoute(num), { method: 'GET' });
-    if (!res.ok) throw Error(res.statusText);
+    if (!res.ok) {
+      throw Error(res.statusText);
+    }
 
     const data = await res.json();
-    if (!data.serverMessage) throw Error('No message received');
+    if (!data.serverMessage) {
+      throw Error('No message received');
+    }
 
     dispatch(sayHelloAsyncSuccess(data.serverMessage));
   } catch {
