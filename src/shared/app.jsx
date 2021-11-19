@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import { APP_NAME } from './config';
 import Nav from './component/nav';
+import Footer from './component/footer';
 import HomePage from './component/page/home';
 import HelloPage from './component/page/hello';
 import HelloAsyncPage from './component/page/hello-async';
@@ -26,6 +27,7 @@ const App = (): React$Element<any> => (
       <Route path={HELLO_ASYNC_PAGE_ROUTE} render={() => <HelloAsyncPage />} />
       <Route component={NotFoundPage} />
     </Switch>
+    <Footer />
   </div>
 );
 

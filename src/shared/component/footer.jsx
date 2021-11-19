@@ -9,9 +9,10 @@ const Footer = (): React$Element<any> => (
     <footer>
       <p>
         ©
+        {' '}
         {APP_NAME}
         {' '}
-        2017
+        {new Date().getFullYear()}
       </p>
     </footer>
   </div>
