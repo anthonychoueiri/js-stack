@@ -24,7 +24,7 @@ const Nav = (): React$Element<any> => {
     { route: NOT_FOUND_DEMO_PAGE_ROUTE, label: '404 Demo' },
   ];
   return (
-    <nav className="navbar navbar-dark bg-dark navbar-inverse fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
         <span className="navbar-toggler-icon" />
       </button>
